@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <UserSecretsId>b733ed7a-51df-4e79-9553-46cb9f8935e7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Ardalis.Specification" Version="6.0.1" />
+    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+    <ItemGroup>
+    <ProjectReference Include="..\QLS.Domain\QLS.Domain.csproj" />
+    <ProjectReference Include="..\QLS.Application\QLS.Application.csproj" />
+    <ProjectReference Include="..\QLS.Shared\QLS.Shared.csproj" />
+    <ProjectReference Include="..\QLS.Infrastructure\QLS.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
